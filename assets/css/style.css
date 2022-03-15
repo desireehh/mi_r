@@ -1,0 +1,195 @@
+/*Variables*/
+
+:root{
+    --principal: #f6d0d5;
+    --secundary: #74747c;
+    --font-primary: 'Kaisei Decol', serif;
+    --font-secundary: 'Rochester', cursive;
+
+}
+
+
+/*normalize*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: #000;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+       
+}
+
+/*Helpers*/
+.flex-row{
+    display: flex;
+
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.container{
+    max-width:1080px;
+    margin: 0 auto;
+
+}
+
+
+/*estilo header*/
+.header{
+    background-image: linear-gradient(to right bottom, #161517, #2e292c, #493d41, #665353, #816c64);
+}
+
+.navbar .navbar-logo{
+    width: 100%;
+    min-width: 430px;
+}
+
+.navbar .navbar-logo img{
+    width: auto;
+    height: 40vh;
+    margin: auto;
+    display: block;
+}
+
+.navbar .navbar-menu{
+    display: flex;
+    background-image: linear-gradient(to top, #fbeff1, #d9ced3, #b7afb6, #959199, #74747c);
+    width: 100%;
+    height:auto;
+    border-top: 2px solid #fcf8f8;
+    border-bottom: 2px solid #fcf8f8;
+    justify-content: center;
+   
+   
+}
+
+.navbar .navbar-menu .navbar-item :hover{
+    background-color: #f6d0d5;
+    transition: all .3s ease-in-out;
+   
+       
+}
+
+.navbar .navbar-menu .navbar-item a {
+    padding: 0 5rem;
+    display: grid;
+    align-content: center;
+    height: 9vh;
+    font-size: 1.6em;
+    
+
+}
+
+/*estilo de main*/
+
+.main{
+    background-image: linear-gradient(to right bottom, #f6d0d5, #d8b6b6, #bb9c99, #9e847e, #816c64);
+ }
+
+
+.presentation{
+    text-align: center;
+    
+}
+
+.presentation h1{
+    font-weight: bold;
+    font-size: 5em;
+    padding-top: 1vh;
+   
+    
+}
+.presentation p{
+    font-family: var(--font-secundary);
+    font-size: 3em;
+
+}
+.sect-art{
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sect-art .sect-art-img{
+      padding: 2em;
+      
+   
+  
+}
+.sect-art-img h2{
+    text-align: center;
+}
+
+.sect-art-img img{
+    border: 10px solid #ababb1;
+}
+
+/*estilo footer*/
+.footer{
+    
+    background-color: #ababb1;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #fcf8f8;
+    border-bottom: 1px solid #fcf8f8; 
+   
+}
+
+.footer-sect{
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    padding: 2em;
+    font-size: 1.5em;
+}
+
+.footer .footer-block {
+    text-align: center;
+    padding: 0 1.6rem
+  
+}
+
+.footer p{
+   text-align: center;
+   font-size: 1.4em;
+   
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 940px) {
+
+header .navbar .navbar-menu{
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+}
+
