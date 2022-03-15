@@ -45,6 +45,7 @@ a{
 /*Helpers*/
 .flex-row{
     display: flex;
+    flex-direction: row;
 
 }
 
@@ -56,6 +57,9 @@ a{
 .container{
     max-width:1080px;
     margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
 
 }
 
@@ -63,12 +67,12 @@ a{
 /*estilo header*/
 .header{
     background-image: linear-gradient(to right bottom, #161517, #2e292c, #493d41, #665353, #816c64);
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: 20vh;
+    
 }
 
-.navbar .navbar-logo{
-    width: 100%;
-    min-width: 430px;
-}
 
 .navbar .navbar-logo img{
     width: auto;
@@ -78,28 +82,28 @@ a{
 }
 
 .navbar .navbar-menu{
-    display: flex;
     background-image: linear-gradient(to top, #fbeff1, #d9ced3, #b7afb6, #959199, #74747c);
     width: 100%;
     height:auto;
     border-top: 2px solid #fcf8f8;
     border-bottom: 2px solid #fcf8f8;
+    align-items: center;
     justify-content: center;
-   
    
 }
 
 .navbar .navbar-menu .navbar-item :hover{
     background-color: #f6d0d5;
     transition: all .3s ease-in-out;
-   
-       
+    border-bottom: 2px solid #fbeff1;      
 }
 
 .navbar .navbar-menu .navbar-item a {
     padding: 0 5rem;
-    display: grid;
-    align-content: center;
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    align-items: center;
     height: 9vh;
     font-size: 1.6em;
     
@@ -109,7 +113,7 @@ a{
 /*estilo de main*/
 
 .main{
-    background-image: linear-gradient(to right bottom, #f6d0d5, #d8b6b6, #bb9c99, #9e847e, #816c64);
+   background-color: var(--principal);
  }
 
 
@@ -148,13 +152,12 @@ a{
 }
 
 .sect-art-img img{
-    border: 10px solid #ababb1;
+    border: 10px solid #816c64;
 }
 
 /*estilo footer*/
 .footer{
-    
-    background-color: #ababb1;
+    background-image: linear-gradient(to top, #fbeff1, #d9ced3, #b7afb6, #959199, #74747c);
     width: 100%;
     height: auto;
     border-top: 1px solid #fcf8f8;
