@@ -23,7 +23,7 @@
 html{
     font-size: 62.5%;
     font-family: var(--font-primary);
-    color: rgb(8, 4, 4);
+    color: #000;
 }
 
 body{
@@ -56,7 +56,6 @@ a{
 }
 
 .container{
-    max-width:1080px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -153,6 +152,8 @@ a{
 
 .sect-art-img img{
     border: 10px solid #816c64;
+    height: 40vh;
+    width: auto;
 }
 
 /*estilo footer*/
